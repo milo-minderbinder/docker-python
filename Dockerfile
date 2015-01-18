@@ -3,6 +3,9 @@ MAINTAINER Milo Minderbinder <minderbinder.enterprises@gmail.com>
 
 ENV HOME /root
 
+CMD ["/sbin/my_init"]
+
+
 RUN apt-get update && apt-get -y install python
 
 # Clean up APT when done
