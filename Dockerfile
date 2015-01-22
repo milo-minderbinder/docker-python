@@ -1,4 +1,4 @@
-FROM mminderbinder/baseimage:0.9.15
+FROM mminderbinder/baseimage
 MAINTAINER Milo Minderbinder <minderbinder.enterprises@gmail.com>
 
 ENV HOME /root
