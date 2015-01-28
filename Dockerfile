@@ -1,7 +1,6 @@
 FROM mminderbinder/baseimage
 MAINTAINER Milo Minderbinder <minderbinder.enterprises@gmail.com>
 
-ENV HOME /root
 
 CMD ["/sbin/my_init"]
 
