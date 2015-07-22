@@ -1,12 +1,14 @@
 # mminderbinder/python
-# Docker image with Python 2.7, pip, virutalenv, and virtualenvwrapper
+# Docker image with Python (2 & 3), pip, virutalenv, and virtualenvwrapper
 FROM mminderbinder/baseimage
 MAINTAINER Milo Minderbinder <minderbinder.enterprises@gmail.com>
 
 # Install python & lmxl dependencies
 RUN apt-get update && apt-get -y install \
 	python \
+	python3 \
 	python-dev \
+	python3-dev \
 	libxml2-dev \
 	libxslt-dev \
 	lib32z1-dev
