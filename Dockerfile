@@ -28,7 +28,7 @@ VOLUME $WORKON_HOME
 
 COPY virtualenv-setup.sh virtualenv-setup.sh
 RUN chmod 550 virtualenv-setup.sh
-RUN ["/bin/bash", "-c", "./virtualenv-setup.sh"]
+RUN ["/bin/bash", "-c", "/root/virtualenv-setup.sh"]
 
 # Clean up APT when done
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
